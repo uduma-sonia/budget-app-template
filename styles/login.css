@@ -22,10 +22,10 @@ body {
 }
 
 button {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
   background-color: #ff9c63;
   border-radius: 20px;
-  outline: none;
   border: 1px solid black;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
+  outline: none;
 }

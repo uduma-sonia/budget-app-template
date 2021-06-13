@@ -43,10 +43,10 @@ img {
 }
 
 button {
+  font-family: "Poppins", sans-serif;
+  width: 300px;
   background-color: #ff9c63;
   border-radius: 20px;
-  outline: none;
   border: 1px solid black;
-  width: 300px;
-  font-family: "Poppins", sans-serif;
+  outline: none;
 }
