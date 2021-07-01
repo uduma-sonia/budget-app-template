@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.welcome-grid1 div:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ff9c63;
+}
+
+.welcome-grid1 p:nth-child(2) {
+  font-weight: 900;
+  line-height: 0.1;
+}
+
+.add {
+  font-size: 22px;
+}
+
+.balance {
+  position: relative;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(255, 252, 96) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 15px;
+  background: #ff9c63;
+  background: linear-gradient(107deg, #ff9c63 30%, #00ffe0 80%);
+  background: -webkit-linear-gradient(107deg, #ff9c63 30%, #00ffe0 80%);
+  background: -moz-linear-gradient(107deg, #ff9c63 30%, #00ffe0 80%);
+}
+
+.plus {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 24px;
+}
+
+.expense p {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.add {
+  position: fixed;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-btn {
+  border: 1px solid #ff9c63;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ff9c63;
+  background: linear-gradient(107deg, #ff9c63 30%, #00ffe0 80%);
+  background: -webkit-linear-gradient(107deg, #ff9c63 30%, #00ffe0 80%);
+  background: -moz-linear-gradient(107deg, #ff9c63 30%, #00ffe0 80%);
+  z-index: 99;
+}

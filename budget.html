@@ -4,40 +4,230 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/fc31dedf63.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/budget.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>BUDGET</h1>
-    <!-- <h1>BUDGET APP</h1>
-    <form>
-      <label for="budget">
-        budget
-        <input type="text" id="budget" />
-      </label>
+    <section>
+      <div class="container-fluid">
+        <div class="row pt-5 pb-5">
+          <div class="col d-flex align-items-center welcome-grid1">
+            <div>😎</div>
 
-      <br />
-      <br />
+            <div class="ml-2">
+              <p>Welcome!</p>
+              <p>Sonia Uduma</p>
+            </div>
+          </div>
+        </div>
 
-      <label for="item">
-        item
-        <input type="text" id="item" />
-      </label>
+        <!-- BALANCE BOX -->
+        <div class="balance text-center py-5">
+          <div class="plus" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </div>
 
-      <br />
-      <br />
+          <div>
+            <p>Total Balance</p>
+            <h1>$2000.00</h1>
+          </div>
+        </div>
+      </div>
 
-      <label for="price">
-        price
-        <input type="number" id="price" />
-      </label>
+      <!-- EXPENSES -->
+      <div class="expense">
+        <div class="my-4 ml-4">
+          <p>Expenses</p>
+        </div>
 
-      <button class="submit">submit</button>
-    </form>
+        <div class="container">
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="font-weight-bold">Eat Sonia</div>
+                <div>$2,000</div>
+              </div>
+            </div>
+          </div>
 
-    <br />
-    <br />
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="font-weight-bold">Eat Sonia</div>
+                <div>$2,000</div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="font-weight-bold">Eat Sonia</div>
+                <div>$2,000</div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="font-weight-bold">Eat Sonia</div>
+                <div>$2,000</div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="font-weight-bold">Eat Sonia</div>
+                <div>$2,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <ul id="list-container"></ul>
-    <button class="add-btn" onclick="sumUp()">add</button> -->
+      <div class="add">
+        <button
+          class="add-btn"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          Add
+        </button>
+      </div>
+    </section>
+
+    <!-- ADD BALANCE MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Top Up Balance</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="$200"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD EXPENSE MODAL -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Add New Expenses
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Grocery"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Price</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="$200"
+                />
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
